@@ -1,0 +1,9 @@
+[Unit]
+Description=easyping
+After=syslog.target
+ 
+[Service]
+ExecStart= /usr/bin/java -jar/home/easyping/easyping.jar #这里改成你自己的路径和jar包名
+ 
+[Install]
+WantedBy=multi-user.target
